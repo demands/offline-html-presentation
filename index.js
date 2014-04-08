@@ -56,5 +56,5 @@ app.post('/colors/:name', function(req, res) {
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function() {
-  console.log("Serer started on port " + PORT);
+  console.log("Server started on port " + PORT);
 });
