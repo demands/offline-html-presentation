@@ -7,7 +7,7 @@
 npm install
 npm start
 ```
-... then open a browser at http://localhost:9999
+... then open a browser at [http://localhost:9999](http://localhost:9999).
 
 ## Helpful Application Cache Links
 
