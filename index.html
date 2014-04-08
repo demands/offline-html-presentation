@@ -67,12 +67,12 @@
         <section data-background="appcache.jpg">
           <div class="translucent-box">
             <h2>HTML5 Application Cache</h2>
-            <p>It's so easy!</p>
+            <p>It's so easy! <b class=fragment>(not really)</b></p>
           </div>
         </section>
 
         <section>
-          <a href="awesome-sauce-1.html" target="_blank">Example!</a>
+          <a href="awesome-sauce-1.html" target="_blank">Super Simple Example!</a>
 
           <div class='file'>
             <h3 class=caption>/index.html:</h3>
@@ -87,10 +87,35 @@
 CACHE MANIFEST
 /assets/awesome-sauce.gif
 /assets/awesome-sauce.css
-/assets/awesome-sauce.ttf
+/assets/awesome-sauce.woff
             </code></pre>
           </div>
 
+        </section>
+
+        <section>
+          <a href="awesome-sauce-2.html" target="_blank">Example #2 - request not in cache</a>
+
+          <div class='file'>
+            <h3 class=caption>/index.html:</h3>
+            <pre><code data-trim>
+&lt;html manifest="/awesome-sauce.appcache"&gt;
+  &lt;img src="http://placekitten.com/g/200/300"
+       title="What will I look like?"
+       width="200" height="300"&gt;
+&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <div class='file'>
+            <h3 class=caption>/awesome-sauce.appcache:</h3>
+            <pre><code data-trim>
+CACHE MANIFEST
+/assets/awesome-sauce.gif
+/assets/awesome-sauce.css
+/assets/awesome-sauce.woff
+            </code></pre>
+          </div>
 
         </section>
 
