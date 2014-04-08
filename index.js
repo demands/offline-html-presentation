@@ -5,8 +5,8 @@ var express = require('express');
 var fs = require('fs');
 var app = express()
 var colors = require('x11-color-names');
-var colorsByName = _(colors).indexBy('name');
-var colorsByCategory = _(colors).groupBy('category');
+var colorsByName = _(colors).indexBy(function(color) { return color.name.toLowerCase(); }).value();
+var colorsByCategory = _(colors).groupBy(function(color) { return color.category.toLowerCase(); }).value();
 
 app.use(express.logger());
 app.use(express.bodyParser());
@@ -31,8 +31,9 @@ app.get(/^\/ex3ff\//, function(req, res) {
 
 app.get('/colors', function(req, res) {
   if(req.query.category) {
-    if(colorsByCategory[req.query.category]) {
-      res.send(colorsByCategory[req.query.category]);
+    category = req.query.category.toLowerCase();
+    if(colorsByCategory[category]) {
+      res.send(colorsByCategory[category]);
     } else {
       res.send(404);
     }
@@ -42,8 +43,9 @@ app.get('/colors', function(req, res) {
 });
 
 app.get('/colors/:name', function(req, res) {
-  if(colorsByName[req.params.name]) {
-    res.send(colorsByName[req.params.name]);
+  colorName = req.params.name.toLowerCase()
+  if(colorsByName[colorName]) {
+    res.send(colorsByName[colorName]);
   } else {
     res.send(404);
   }
