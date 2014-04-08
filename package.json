@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/demands/offline-html-presentation",
   "dependencies": {
-    "express": "^3.5.1"
+    "express": "^3.5.1",
+    "x11-color-names": "git+https://github.com/nathan-muir/x11-color-names"
   }
 }
