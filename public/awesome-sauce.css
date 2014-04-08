@@ -8,7 +8,7 @@ body {
   background: url('awesome-sauce.gif');
   font-family: 'Comic Neue', sans-serif;
   display: flex;
-  height: 1000px;
+  height: 500px;
 }
 
 div {
@@ -21,3 +21,9 @@ div {
   text-align: center;
 }
 
+iframe {
+  width: 0;
+  height: 0;
+  display: absolute;
+  top: -99999em;
+}

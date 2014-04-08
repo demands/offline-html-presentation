@@ -153,7 +153,56 @@ http://placekitten.com/
         <section>
           <a href="ex3/" target="_blank">Example #3 - Single Page App</a>
           <br>
-          (with client-side html5 pushstate routes)
+          (with an approximation of client-side html5 pushstate routes)
+        </section>
+
+        <section>
+          <a href="ex3f/" target="_blank">Example #3 - Working Single Page App</a>
+
+          <div class='file'>
+            <h3 class=caption>/awesome-sauce.appcache:</h3>
+            <pre><code data-trim>
+CACHE MANIFEST
+
+CACHE:
+awesome-sauce.gif
+awesome-sauce.css
+awesome-sauce.woff
+
+NETWORK:
+http://placekitten.com/
+
+FALLBACK:
+/ /fallback.html
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <a href="ex3ff/" target="_blank">Example #3 - Working Single Page App That Isn't Endlessly Adding Tons of Stuff to your Cache</a>
+
+          <div class='file'>
+            <h3 class=caption>/index.html:</h3>
+            <pre><code data-trim>
+&lt;html&gt;
+  &lt;iframe src="/cachelink.html"&gt;&lt;/iframe&gt;
+  <!-- page content here -->
+&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <div class='file'>
+            <h3 class=caption>/cachelink.html:</h3>
+            <pre><code data-trim>
+&lt;html manifest="/awesome-sauce.appcache"&gt;&lt;/html&gt;
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <p>Kinda feels like riding a bike with no hands...</p>
+
+          <iframe src="//player.vimeo.com/video/29106106?loop=1&autoplay=1" width="1000" height="562" frameborder="0"></iframe>
         </section>
 
 			</div>

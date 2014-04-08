@@ -9,4 +9,6 @@ NETWORK:
 http://placekitten.com/
 
 FALLBACK:
-/ex3f/ /ex3f/fallback
+/ex3ff/ /ex3ff/fallback
+
+#v1
