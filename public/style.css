@@ -14,6 +14,13 @@
   padding: 5px;
 }
 
+  .reveal .translucent-box-2
+{
+  background: hsla(255,80%,100%,0.6);
+  border-radius: 10px;
+  padding: 5px;
+}
+
   .file h3.caption
 {
   font-family: monospace;
@@ -21,4 +28,22 @@
   font-size: 70%;
   padding-bottom: 5px;
   padding-top: 30px;
+}
+
+
+  .reveal table
+{
+  margin: 10px auto;
+  border: 3px solid black;
+}
+
+  .reveal table td
+{
+  border-top: 3px solid black;
+  padding: 10px;
+}
+
+  .reveal table tr:nth-child(1) td
+{
+  border-top: none;
 }
