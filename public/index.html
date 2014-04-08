@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="example-app">
 
 	<head>
 		<meta charset="utf-8">
@@ -28,9 +28,14 @@
 		<!--[if lt IE 9]>
 		<script src="reveal.js/lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="bower_components/angular-cached-resource/angular-cached-resource.js"></script>
+    <script type="text/javascript" src="angular-setup.js"></script>
 	</head>
 
-	<body>
+	<body ng-controller="ExampleController">
 
 		<div class="reveal">
 
