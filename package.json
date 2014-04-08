@@ -1,0 +1,22 @@
+{
+  "name": "offline-html-presentation",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demands/offline-html-presentation.git"
+  },
+  "author": "Max Edmands",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demands/offline-html-presentation/issues"
+  },
+  "homepage": "https://github.com/demands/offline-html-presentation",
+  "dependencies": {
+    "express": "^3.5.1"
+  }
+}
