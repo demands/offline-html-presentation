@@ -17,8 +17,8 @@
 		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
 		<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <!-- Custom fuckery -->
+    <link rel="stylesheet" href="style.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -54,6 +54,45 @@
 					<h2>Demo</h2>
           <img src="demo.png">
 				</section>
+
+        <section>
+          <h2>Buncha cool technology:</h2>
+          <ul>
+            <li class='fragment fade-out'>Message queue for garbanzo &rarr; kale integration</li>
+            <li class='fragment'>HTML5 Application Cache</li>
+            <li class='fragment'>ng-cached-resource</li>
+          </ul>
+        </section>
+
+        <section data-background="appcache.jpg">
+          <div class="translucent-box">
+            <h2>HTML5 Application Cache</h2>
+            <p>It's so easy!</p>
+          </div>
+        </section>
+
+        <section>
+          <a href="awesome-sauce-1.html" target="_blank">Example!</a>
+
+          <div class='file'>
+            <h3 class=caption>/index.html:</h3>
+            <pre><code data-trim>
+              &lt;html manifest="/awesome-sauce.appcache"&gt;&lt;/html&gt;
+            </code></pre>
+          </div>
+
+          <div class='file'>
+            <h3 class=caption>/awesome-sauce.appcache:</h3>
+            <pre><code data-trim>
+CACHE MANIFEST
+/assets/awesome-sauce.gif
+/assets/awesome-sauce.css
+/assets/awesome-sauce.ttf
+            </code></pre>
+          </div>
+
+
+        </section>
 
 			</div>
 

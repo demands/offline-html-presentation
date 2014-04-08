@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('awesome-sauce.woff') format('woff');
+  font-weight: 100;
+}
+
+body {
+  background: url('awesome-sauce.gif');
+  font-family: 'Comic Neue', sans-serif;
+  display: flex;
+  height: 1000px;
+}
+
+div {
+  background: hsla(75, 100%, 50%, 0.8);
+  font-size: 500%;
+  margin: auto;
+  padding: 20px;
+  max-width: 50%;
+  text-align: center;
+}
