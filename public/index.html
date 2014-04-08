@@ -231,6 +231,8 @@ FALLBACK:
           <pre><code data-trim>
 Color = $resource('/colors/:name', {name: '@name'});
           </code></pre>
+          <div class='colorbox' ng-style="{'background-color': '#' + color.hex}" ></div>
+          <p>{{color.name}}</p>
         </section>
 
         <section data-background="apocalypse.jpg">
