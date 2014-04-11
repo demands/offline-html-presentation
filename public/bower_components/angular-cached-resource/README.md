@@ -3,7 +3,8 @@ ngCachedResource [![NPM version][npm-badge]][npm-link]  [![Build Status][travis-
 
 An [AngularJS][angular] module to interact with RESTful server-side data sources, even
 when the browser is offline. Uses HTML5 [localStorage][localStorage] under the hood.
-Closely mimics the behavior of the core [ngResource][ngResource] module.
+Closely mimics the behavior of the core [ngResource][ngResource] module, which it requires
+as a dependency.
 
 ## A simple example
 
@@ -71,6 +72,27 @@ properties:
 
 ------
 
+## Installing
+
+**Bower:**
+
+```bash
+bower install angular-cached-resource
+```
+
+**npm:** (intended for use with [browserify](http://browserify.org/))
+
+```bash
+npm install angular-cached-resource
+```
+
+**Manual Download:**
+
+- development: [angular-cached-resource.js](https://raw.githubusercontent.com/goodeggs/angular-cached-resource/master/angular-cached-resource.js)
+- production: [angular-cached-resource.min.js](https://raw.githubusercontent.com/goodeggs/angular-cached-resource/master/angular-cached-resource.min.js)
+
+---
+
 ## Details
 
 Asking for a cached resource with `get` or `query` will do the following:
@@ -96,7 +118,7 @@ Updating a CachedResource object will do the following:
 
 ## Development
 
-Just make sure you run the tests.
+Please make sure you run the tests, and add to them unless it's a trivial change:
 ```
 npm install
 npm test
@@ -106,7 +128,7 @@ npm test
 
 ## License
 
-MIT.
+[MIT](https://github.com/goodeggs/angular-cached-resource/blob/master/LICENSE.md)
 
 [npm-badge]: https://badge.fury.io/js/angular-cached-resource.png
 [npm-link]: http://badge.fury.io/js/angular-cached-resource

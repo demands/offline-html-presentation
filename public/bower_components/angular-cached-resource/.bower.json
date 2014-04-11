@@ -1,7 +1,7 @@
 {
   "name": "angular-cached-resource",
   "main": "angular-cached-resource.js",
-  "version": "0.4.7",
+  "version": "0.4.9",
   "homepage": "https://github.com/goodeggs/angular-cached-resource",
   "authors": [
     "Max Edmands <max@goodeggs.com>",
@@ -28,14 +28,13 @@
   "devDependencies": {
     "angular-mocks": "~1.2.14"
   },
-  "_release": "0.4.7",
+  "_release": "0.4.9",
   "_resolution": {
     "type": "version",
-    "tag": "v0.4.7",
-    "commit": "8b7b6b577ae82fdffe8772b4267ab6c151b19851"
+    "tag": "v0.4.9",
+    "commit": "5bbfb15843dee6dc927a5dbadb106d23983cedec"
   },
   "_source": "git://github.com/goodeggs/angular-cached-resource.git",
   "_target": "~0.4.7",
-  "_originalSource": "angular-cached-resource",
-  "_direct": true
+  "_originalSource": "angular-cached-resource"
 }
